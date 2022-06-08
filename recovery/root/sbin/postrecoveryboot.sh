@@ -19,3 +19,6 @@
 # 	Please maintain this if you use this script or any part of it
 
 ln -s /dev/block/bootdevice/by-name/vendor /dev/block/bootdevice/by-name/cust
+rm -f /data/system/storage.xml
+touch /data/system/storage.xml
+chattr +i /data/system/storage.xml
